@@ -1,20 +1,25 @@
-var buttonResult = document.getElementById('buttonResult');
+var buttonResult = document.getElementById("buttonResult");
 
-//var elemet = document.querySelector ('div.convert_block_item input [convert_result]');
 
-function onButtonResultClick (){
-  console.log('onButtonResultClick');
-  var input1 = document.getElementById(id='num1');
-  var input2 = document.getElementById(id='num2');
+function onButtonResultClick() {
+  console.log("onButtonResultClick");
+  var input1 = document.getElementById("num1");
+  var input2 = document.getElementById( "num2");
+  
 
-  var num1 = Number (imput1.value);
-  var num2 = Number (imput2.value);
 
-  var summ = num2 / num1;
-  window.alert(summ);
-  ButtonResult.addEventListener('click',onButtonResultClick); //
- //ButtonResult = document.getElementById('convert_result');
+  var num1 = Number(input1.value);
+  var num2 = Number(input2.value);
+
+  let summ = num2 / num1;
+  i.value = summ;
+
+//   window.alert(summ);
+
+    
+
 }
+var i = document.querySelector(".result");
 
-//ButtonResult = document.getElementById('convert_result'); // поле для результата 
-//buttonResult.addEventListener('click',onButtonResultClick); //кнопка для результата
+
+buttonResult.addEventListener("click", onButtonResultClick); //кнопка для результата
